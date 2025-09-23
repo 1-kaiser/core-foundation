@@ -1,107 +1,109 @@
-# Developer Roadmap: Core Engineering Foundations
+# Developer Roadmap (Tech-Stack Agnostic)
 
-This roadmap provides a structured path for building strong backend and full-stack fundamentals. Each section includes concepts to learn, key practices, and external resources for deeper study.
-
----
-
-## 1. How the Web Works 🌐
-**Key Concepts:**
-- Client-server model
-- HTTP requests and responses
-- Headers, cookies, and sessions
-- Status codes (2xx, 3xx, 4xx, 5xx)
-
-**Resources:**
-- [MDN Web Docs: HTTP Overview](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
-- [HTTP Status Codes – IANA Registry](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml)
+This roadmap is about the **foundations** that matter regardless of the frameworks, languages, or tools you use.  
+It doesn’t matter what tech stack you choose.
 
 ---
 
-## 2. Data and SQL 🗄️
-**Key Concepts:**
-- Designing relational tables
-- SQL queries (SELECT, WHERE, JOINs)
-- Indexing for performance
-- Normalization and denormalization
+## 1. How the Web Works
+Understand the fundamentals of requests, responses, headers, and status codes.  
+This is the backbone of web development — everything else builds on it.
+
+- Learn how browsers and servers talk (HTTP).
+- Know common status codes (200, 301, 404, 500).
+- Understand headers and why they matter (cookies, caching, CORS).
 
 **Resources:**
-- [SQLBolt Interactive Lessons](https://sqlbolt.com/)
+- [MDN Web Docs: HTTP Overview](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)  
+- [HTTP Status Codes Explained](https://httpstatuses.com/)
+
+---
+
+## 2. Data and SQL
+Being able to model, query, and optimize data is core to any application.
+
+- Learn how to design tables and relationships.
+- Write SQL joins (`INNER JOIN`, `LEFT JOIN`, etc.).
+- Add indexes when queries get slow.
+
+**Resources:**
+- [SQLBolt Interactive Lessons](https://sqlbolt.com/)  
 - [Use The Index, Luke!](https://use-the-index-luke.com/)
 
 ---
 
-## 3. State and Caching ⚡
-**Key Concepts:**
-- When to store vs. when to fetch
-- In-memory caching (Redis, Memcached)
-- Avoiding stale data and cache invalidation
-- Session vs. application state
+## 3. State and Caching
+Applications are about **data at the right time**. Know when to fetch, store, or invalidate.
+
+- When to cache results vs. when to re-fetch.
+- Avoid stale or inconsistent data.
+- Understand session state, local storage, and distributed caching.
 
 **Resources:**
-- [Caching Fundamentals by Cloudflare](https://www.cloudflare.com/learning/cdn/what-is-caching/)
-- [Redis Official Documentation](https://redis.io/docs/)
+- [Caching Fundamentals (Cloudflare)](https://developers.cloudflare.com/cache/about/)  
+- [Caching Strategies and Best Practices (Akamai)](https://developer.akamai.com/blog/2021/05/03/caching-strategies-and-best-practices)
 
 ---
 
-## 4. Errors and Logs 🪵
-**Key Concepts:**
-- Logging strategies (info, warning, error)
-- Error handling patterns
-- Monitoring and observability
-- Root cause analysis
+## 4. Errors and Logs
+Things break. Good developers know how to find **why**.
+
+- Learn how to surface meaningful error messages.
+- Centralize logs for visibility.
+- Know where to start debugging when issues happen.
 
 **Resources:**
-- [12 Factor App – Logs](https://12factor.net/logs)
-- [Introduction to Logging in Software](https://www.loggly.com/ultimate-guide/what-is-logging/)
+- [12 Factor App: Logs](https://12factor.net/logs)  
+- [Effective Logging Practices (Better Stack Guide)](https://betterstack.com/community/guides/logging/)
 
 ---
 
-## 5. Testing ✅
-**Key Concepts:**
-- Unit, integration, and end-to-end tests
-- Test-driven development (TDD)
-- Writing small tests before big changes
-- Mocking and stubs
+## 5. Testing
+Tests give you confidence to ship changes without fear.
+
+- Start small: test the critical parts first.
+- Write a test before a big change.
+- Automate running them as much as possible.
 
 **Resources:**
-- [Kent C. Dodds – Testing JavaScript](https://testingjavascript.com/)
-- [Martin Fowler – TestPyramid](https://martinfowler.com/bliki/TestPyramid.html)
+- [Testing Best Practices (Kent C. Dodds)](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library) *(applies beyond React)*  
+- [Martin Fowler: Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html)
 
 ---
 
-## 6. Git and Code Reviews 🌱
-**Key Concepts:**
-- Writing clear commit messages
-- Branching strategies (GitFlow, trunk-based)
-- Small PRs for easier reviews
-- Giving constructive feedback
+## 6. Git and Reviews
+Version control is non-negotiable. Start with **Git fundamentals**, then build on collaboration practices.
+
+### Git Fundamentals
+- Initialize and clone repositories.  
+- Stage, commit, and push changes.  
+- Branching and merging.  
+- Resolving conflicts.  
+- Basic history inspection (`git log`, `git diff`).  
+
+### Collaboration & Reviews
+- Keep pull requests small and focused.  
+- Write clear, descriptive commit messages.  
+- Provide kind but direct feedback in code reviews.  
 
 **Resources:**
-- [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)
-- [How to Do Code Reviews Like a Human](https://mtlynch.io/human-code-reviews-1/)
+- [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)  
+- [Pro Git (Free Book)](https://git-scm.com/book/en/v2)  
+- [How to Write a Git Commit Message (Chris Beams)](https://chris.beams.io/posts/git-commit/)  
 
 ---
 
-## 7. Deploy Basics 🚀
-**Key Concepts:**
-- Environment variables and configuration
-- Rollbacks and hotfix strategies
-- Post-deploy checks
-- “What to do if it breaks” runbook
+## 7. Deploy Basics
+Shipping your work is part of development. Know how to do it safely.
+
+- Use environment variables for secrets/configs.
+- Document how to roll back if something goes wrong.
+- Always leave a “what to do if it breaks” note.
 
 **Resources:**
-- [12 Factor App – Config](https://12factor.net/config)
-- [Google SRE – Incident Management](https://sre.google/sre-book/incident-response/)
+- [12 Factor App: Config](https://12factor.net/config)  
+- [Introduction to CI/CD (Red Hat)](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
 
 ---
 
-## 📌 How to Use This Roadmap
-1. Pick one topic at a time.
-2. Practice concepts with small projects.
-3. Document your learnings in notes or a blog.
-4. Revisit topics as your experience grows.
-
----
-
-## 🎯 Goal
-By following this roadmap, you’ll build the foundations needed to work confidently as a software engineer—able to write, test, ship, and maintain reliable applications.
+Stacks change. Frameworks come and go. But if you master these foundations, you’ll be ready to build and grow in any environment.
