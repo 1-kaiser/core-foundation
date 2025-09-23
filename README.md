@@ -28,7 +28,7 @@ Being able to model, query, and optimize data is core to any application.
 
 **Resources:**
 - [SQLBolt Interactive Lessons](https://sqlbolt.com/)  
-- [Use The Index, Luke!](https://use-the-index-luke.com/)
+- [What is Index in SQL](https://stackoverflow.com/questions/2955459/what-is-an-index-in-sql)
 - [SQL Roadmap](https://roadmap.sh/sql/)
 
 ---
@@ -42,7 +42,8 @@ Applications are about **data at the right time**. Know when to fetch, store, or
 
 **Resources:**
 - [Caching Fundamentals (Cloudflare)](https://developers.cloudflare.com/cache/about/)  
-- [Caching Strategies and Best Practices (Akamai)](https://developer.akamai.com/blog/2021/05/03/caching-strategies-and-best-practices)
+- [Caching Strategies](https://medium.com/@mmoshikoo/cache-strategies-996e91c80303)
+- [A Developer’s Guide to Browser Storage: Local Storage, Session Storage, and Cookies](https://dev.to/aneeqakhan/a-developers-guide-to-browser-storage-local-storage-session-storage-and-cookies-4c5f)
 
 ---
 
