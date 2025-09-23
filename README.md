@@ -108,3 +108,5 @@ Shipping your work is part of development. Know how to do it safely.
 ---
 
 Stacks change. Frameworks come and go. But if you master these foundations, you’ll be ready to build and grow in any environment.
+
+When you learn a new stack, fill a simple checklist: print text, make an HTTP call, read/write a file, talk to a DB, write one test, log one error.
