@@ -29,6 +29,7 @@ Being able to model, query, and optimize data is core to any application.
 **Resources:**
 - [SQLBolt Interactive Lessons](https://sqlbolt.com/)  
 - [Use The Index, Luke!](https://use-the-index-luke.com/)
+- [SQL Roadmap](https://roadmap.sh/sql/)
 
 ---
 
