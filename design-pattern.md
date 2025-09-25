@@ -5,15 +5,7 @@ They provide a shared vocabulary and best practices for building **maintainable,
 
 ---
 
-## 🌱 Why Design Patterns Matter
-- **Reusability** → Apply tried-and-true solutions instead of reinventing the wheel.  
-- **Maintainability** → Code is easier to extend and refactor.  
-- **Communication** → Provides a common language between developers (e.g., “Use the Observer here”).  
-- **Scalability** → Patterns help structure large systems without chaos.  
-
----
-
-## 📦 Categories of Design Patterns
+## Categories of Design Patterns
 
 ### 1. Creational Patterns
 Focus on **object creation mechanisms**. They abstract the instantiation process, making systems more flexible in deciding what to create.
