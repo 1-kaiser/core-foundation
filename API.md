@@ -11,8 +11,8 @@ This improves performance, prevents timeouts, and avoids crashing clients with o
 For real-time or frequently updated data, prefer **cursor-based pagination** for consistency.
 
 **Resources:**
-- [Pagination with REST APIs (Dev.to)](https://dev.to/mohanavel/pagination-in-rest-api-1h5h)  
-- [Best Practices for Designing Pagination (Microsoft Docs)](https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design#pagination)  
+- [Unlocking the Power of API Pagination: Best Practices and Strategies](https://dev.to/pragativerma18/unlocking-the-power-of-api-pagination-best-practices-and-strategies-4b49)  
+- [A guide to REST API pagination](https://www.merge.dev/blog/rest-api-pagination)  
 
 ---
 
@@ -23,7 +23,7 @@ Always define a **cache invalidation** strategy to prevent stale data issues.
 
 **Resources:**
 - [HTTP Caching (MDN Web Docs)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching)  
-- [Redis Caching Guide](https://redis.io/docs/manual/programmability/cache/)  
+- [API Caching: Techniques for Better Performance](https://pieces.medium.com/api-caching-techniques-for-better-performance-6297ec1ac02c)  
 
 ---
 
@@ -35,7 +35,7 @@ Inefficient queries can choke your API.
 - Cache frequent queries.  
 
 **Resources:**
-- [How to Analyze SQL Query Performance (DigitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-analyze-sql-query-performance-for-beginners)  
+- [SQL Query Optimization: 15 Techniques for Better Performance](https://www.datacamp.com/blog/sql-query-optimization)  
 - [Use The Index, Luke!](https://use-the-index-luke.com/)  
 
 ---
@@ -47,23 +47,23 @@ Reduce API response sizes for faster transfers.
 - Use lightweight formats like **JSON** or **Protocol Buffers**.  
 
 **Resources:**
-- [Gzip Compression for Web APIs (Baeldung)](https://www.baeldung.com/spring-boot-gzip-compression)  
-- [Optimizing API Payloads (Nordic APIs)](https://nordicapis.com/optimizing-your-api-payloads/)  
+- [Compression Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Compression_Streams_API)  
+- [5 Ways to Reduce API Payload Size in PHP](https://inspector.dev/5-ways-to-reduce-api-payload-size-in-php/)
+- [Protocol Buffer vs Json - when to choose one over the other?](https://stackoverflow.com/questions/52409579/protocol-buffer-vs-json-when-to-choose-one-over-the-other)
 
 ---
 
 ### 5. Asynchronous Processing
 Long-running tasks (e.g., file uploads, report generation) should not block the main API response.  
-- Use background workers (e.g., RabbitMQ, Celery, Sidekiq).  
 - Return a **task ID** so clients can poll or receive status updates.  
 
 **Resources:**
-- [Asynchronous Requests in REST APIs (Stack Overflow)](https://stackoverflow.com/questions/22733926/asynchronous-request-in-rest-api)  
-- [Celery Documentation](https://docs.celeryq.dev/en/stable/)  
+- [Introducing asynchronous JavaScript](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Async_JS/Introducing)  
+- [Dynamic APIs are Asynchronous](https://nextjs.org/docs/messages/sync-dynamic-apis)  
 
 ---
 
-## 🔒 Security Best Practices
+## Security Best Practices
 
 ### 6. Rate Limiting and Throttling
 Prevent abuse, ensure fairness, and avoid server overload.  
@@ -71,8 +71,9 @@ Prevent abuse, ensure fairness, and avoid server overload.
 - Use exponential backoff for retries.  
 
 **Resources:**
-- [API Rate Limiting Strategies (Nordic APIs)](https://nordicapis.com/everything-you-need-to-know-about-api-rate-limiting/)  
-- [OWASP API Security Top 10](https://owasp.org/API-Security/)  
+- [Everything You Need to Know About Rate Limiting for APIs](https://medium.com/@bijit211987/everything-you-need-to-know-about-rate-limiting-for-apis-f236d2adcfff)  
+- [How to Throttle Requests: A Comprehensive Guide](https://medium.com/@datajournal/how-to-throttle-requests-c1f9dcd8508f)
+- [Best Practices: API Rate Limiting vs. Throttling](https://blog.stoplight.io/best-practices-api-rate-limiting-vs-throttling)
 
 ---
 
@@ -85,8 +86,11 @@ Validate and sanitize **all user inputs** to protect against:
 Use schema validation tools like **JSON Schema** or built-in framework validators.  
 
 **Resources:**
-- [OWASP Data Validation Guide](https://owasp.org/www-community/data_validation)  
-- [JSON Schema Validation](https://json-schema.org/)  
+- [Input Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)  
+- [Specify JSON Schema Validation](https://www.mongodb.com/docs/manual/core/schema-validation/specify-json-schema/)
+- [SQL Injection](https://www.w3schools.com/sql/sql_injection.asp)
+- [Cross-site scripting (XSS)](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/XSS)
+- [400 Bad Request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/400)
 
 ---
 
@@ -97,8 +101,8 @@ You can’t fix what you can’t see.
 - Tools: **Datadog, New Relic, Prometheus, ELK stack**.  
 
 **Resources:**
-- [Best Practices for API Monitoring (Postman Blog)](https://blog.postman.com/api-monitoring-best-practices/)  
-- [Logging Best Practices (Better Stack Guide)](https://betterstack.com/community/guides/logging/logging-best-practices/)  
+- [API Monitoring](https://www.postman.com/api-platform/api-monitoring/)  
+- [Top 12 API Monitoring Tools to Try in 2025](https://middleware.io/blog/api-monitoring-tools/)  
 
 ---
 
@@ -108,8 +112,8 @@ Control **who can access your API** and **what they can do**.
 - Apply role-based or scope-based permissions.  
 
 **Resources:**
-- [OAuth 2.0 and OpenID Connect (Okta)](https://developer.okta.com/blog/2017/07/25/oidc-primer-part-1)  
-- [JWT Best Practices (Auth0)](https://auth0.com/learn/json-web-tokens/)  
+- [Node.js API Authentication Guide](https://www.w3schools.com/nodejs/nodejs_api_auth.asp)  
+- [Understand the Differences: API Authentication vs API Authorization](https://konghq.com/blog/engineering/api-authentication-vs-api-authorization)  
 
 ---
 
@@ -120,7 +124,7 @@ Always secure client-server communication.
 - Use modern ciphers.  
 
 **Resources:**
-- [Let’s Encrypt Free TLS Certificates](https://letsencrypt.org/)  
-- [TLS Best Practices (Mozilla)](https://wiki.mozilla.org/Security/Server_Side_TLS)  
+- [What is API encryption?](https://blog.postman.com/what-is-api-encryption/)  
+- [API Security: API Encryption – Protecting Data in Transit and at Rest and How We Are Solving the Problem Through APISecurityEngine](https://www.linkedin.com/pulse/api-security-encryption-protecting-data-transit-rest-how-vartul-goyal-2vsic/)  
 
 ---
