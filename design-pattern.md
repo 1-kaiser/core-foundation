@@ -66,3 +66,7 @@ Focus on **object interaction and responsibility delegation**.
 - [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)
 
 ---
+
+[Code examples here](https://refactoring.guru/design-patterns/examples)
+
+---
