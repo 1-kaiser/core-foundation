@@ -17,8 +17,11 @@ Focus on **object creation mechanisms**. They abstract the instantiation process
 - **Prototype** → Create new objects by cloning existing ones.  
 
 **Resources:**
-- [Refactoring Guru: Creational Patterns](https://refactoring.guru/design-patterns/creational)  
-- [Singleton Pattern Explained (GeeksforGeeks)](https://www.geeksforgeeks.org/singleton-design-pattern/)  
+- [Singleton](https://refactoring.guru/design-patterns/singleton)  
+- [Factory Method](https://refactoring.guru/design-patterns/factory-method)
+- [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)
+- [Builder](https://refactoring.guru/design-patterns/builder)
+- [Prototype](https://refactoring.guru/design-patterns/prototype)
 
 ---
 
@@ -33,8 +36,12 @@ Deal with **object composition** and how classes and objects work together to fo
 - **Proxy** → Control access to an object (e.g., lazy loading, security).  
 
 **Resources:**
-- [Refactoring Guru: Structural Patterns](https://refactoring.guru/design-patterns/structural)  
-- [Adapter, Facade, Proxy Patterns (SourceMaking)](https://sourcemaking.com/design_patterns/structural_patterns)  
+- [Adapter](https://refactoring.guru/design-patterns/adapter)  
+- [Bridge](https://refactoring.guru/design-patterns/bridge)
+- [Composite](https://refactoring.guru/design-patterns/composite)
+- [Decorator](https://refactoring.guru/design-patterns/decorator)
+- [Facade](https://refactoring.guru/design-patterns/facade)
+- [Proxy](https://refactoring.guru/design-patterns/proxy)
 
 ---
 
@@ -50,7 +57,12 @@ Focus on **object interaction and responsibility delegation**.
 - **Chain of Responsibility** → Pass requests along a chain of handlers.  
 
 **Resources:**
-- [Refactoring Guru: Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral)  
-- [Observer Pattern (TutorialsPoint)](https://www.tutorialspoint.com/design_pattern/observer_pattern.htm)  
+- [Observer](https://refactoring.guru/design-patterns/observer)  
+- [Strategy](https://refactoring.guru/design-patterns/strategy)
+- [Command](https://refactoring.guru/design-patterns/command)
+- [State](https://refactoring.guru/design-patterns/state)
+- [Mediator](https://refactoring.guru/design-patterns/mediator)
+- [Iterator](https://refactoring.guru/design-patterns/iterator)
+- [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)
 
 ---
