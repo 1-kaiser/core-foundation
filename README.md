@@ -1,4 +1,4 @@
-# Developer Roadmap (Tech-Stack Agnostic
+# Developer Roadmap (Tech-Stack Agnostic)
 
 This roadmap is about the **foundations** that matter regardless of the frameworks, languages, or tools you use.  
 It doesn’t matter what tech stack you choose.
